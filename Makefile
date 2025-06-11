@@ -13,14 +13,6 @@ build:
 	@go build -o $(BINARY_PATH) $(GO_FILES)
 	@echo "Build complete: $(BINARY_PATH)"
 
-test:
-	@echo "Running tests..."
-	@cd $(SOURCE_DIR) && go test -v
-
-test-coverage:
-	@echo "Running tests with coverage..."
-	@cd $(SOURCE_DIR) && go test -v -cover
-
 clean:
 	@echo "Cleaning..."
 	@rm -rf bin
